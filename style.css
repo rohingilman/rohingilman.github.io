@@ -23,7 +23,7 @@ h1,h2,h3 {
 }
 
 .title-block {
-	height: 230px;
+	height: 250px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
