@@ -1,0 +1,110 @@
+/* 
+	Style sheet for website
+	Date: 09/03/2024
+*/
+
+body {
+	margin: 0;
+	font-family: Tahoma, sans-serif;
+}
+
+h1,h2,h3 {
+	font-family: 'Century Gothic', sans-serif;
+	font-weight: 300;
+}
+
+.main-block {
+	margin: 8px;
+	display: flex;
+	justify-content: center;
+
+	background-color: #FFFFFF;
+	color: #11151C;
+}
+
+.title-block {
+	height: 230px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* background-color: #CEA2AC; */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("images/banner.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title-block h1 {
+	color: #FFFFFF;
+	font-size: 80px;
+}
+
+.pdf {
+	width: 840px;
+	height: auto;
+	aspect-ratio: 4/5;
+	overflow: auto;
+}
+
+/********** Navigation Bar **********/
+.navbar {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+
+	position: sticky;
+	top: 0;
+
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+
+	background-color: #212D40;
+}
+
+.navbar a {
+	display: block;
+	padding: 18px 30px;
+
+	text-decoration: none;
+	text-align: center;
+	font-family: 'Century Gothic', sans-serif;
+	color: #FFFFFF;
+}
+
+.navbar-right {
+	display: flex;
+}
+
+.navbar-right a {
+	padding-top: 32768px;
+	margin-top: -32768px; 
+	padding-bottom: 32768px;
+	margin-bottom: -32768px;
+	height: 100%;
+}
+
+.navbar .name {
+	font-size: 20px;
+}
+
+.navbar .active {
+	background-color: #CEA2AC;
+	font-weight: bold;
+	color: #11151C;
+}
+
+.navbar a:hover:not(.active,.name) {
+	background-color: #364156;
+	color: #FFFFFF;
+}
+
+
+/********** Anti-Spam **********/
+b.block-bots 
+{ 
+	display: none; 
+}
