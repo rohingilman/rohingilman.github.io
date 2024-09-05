@@ -101,7 +101,8 @@ h3 {
 	}
 }
 
-/********** Navigation Bar Small Screens **********/
+/********** Navigation Bar **********/
+
 .navbar {
 	width: 100%;
 	height: auto;
@@ -151,7 +152,7 @@ h3 {
 	color: #FFFFFF;
 }
 
-/********** Small screens **********/
+/********** Navigation Bar Small screens **********/
 .navbar .menu-icon {
 	display: none;
 	padding: 0 25px;
@@ -163,7 +164,8 @@ h3 {
 
 @media screen and (max-width: 800px) {
 	.navbar {
-		position: relative;
+		position: absolute;
+		top: 0;
 	}
 	.navbar a:not(.name) {
 		display: none;}
@@ -186,6 +188,7 @@ h3 {
 		width: 100%;
 		display: flex;
 		text-align: left;
+		transition: 0.5s;
 	}
 
 	.navbar.responsive .menu-icon {
