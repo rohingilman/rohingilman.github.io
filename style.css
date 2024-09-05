@@ -16,10 +16,41 @@ h1,h2,h3 {
 .main-block {
 	margin: 8px;
 	display: flex;
-	justify-content: center;
 
 	background-color: #FFFFFF;
 	color: #11151C;
+}
+
+.half-page-content {
+	width: 500px;
+	margin: 20px;
+	overflow: auto;
+}
+
+/********** Text Blocks Small Screens **********/
+@media screen and (max-width: 800px) {
+	.main-block {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.half-page-content {
+		margin: 20px;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.main-block {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.half-page-content {
+		width: 85%;
+		margin: 20px;
+		margin-bottom: 0;
+	}
 }
 
 .title-block {
@@ -48,7 +79,7 @@ h1,h2,h3 {
 	overflow: auto;
 }
 
-/********** Navigation Bar **********/
+/********** Navigation Bar Small Screens **********/
 .navbar {
 	width: 100%;
 	height: auto;
@@ -96,7 +127,7 @@ h1,h2,h3 {
 	color: #FFFFFF;
 }
 
-/********** Navigation bar small screens **********/
+/********** Small screens **********/
 .navbar .menu-icon {
 	background-color: #364156;
 	color: #FFFFFF;
