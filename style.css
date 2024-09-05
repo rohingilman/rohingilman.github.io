@@ -152,10 +152,12 @@ h3 {
 
 /********** Small screens **********/
 .navbar .menu-icon {
+	display: none;
+	padding: 0 20px;
+
 	background-color: #364156;
 	color: #FFFFFF;
 	font-size: 20px;
-	display: none;
 }
 
 @media screen and (max-width: 800px) {
