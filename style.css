@@ -175,10 +175,6 @@ h3 {
 		width: 100%;
 	}
 
-	.navbar.responsive .name {
-		display: none
-	}
-
 	.navbar.responsive a:not(.name,.menu-icon) {
 		width: 100%;
 		display: flex;
