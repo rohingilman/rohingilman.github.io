@@ -97,6 +97,8 @@ h1,h2,h3 {
 
 /********** Navigation bar small screens **********/
 .navbar .menu-icon {
+	background-color: #212D40;
+	color: #FFFFFF;
 	display: none;
 }
 
@@ -130,7 +132,8 @@ h1,h2,h3 {
 		right: 0;
 		top: 0;
 
-		color: #11151C;
+		background-color: #212D40;
+		color: #FFFFFF;
 	}
 }
 
