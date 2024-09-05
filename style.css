@@ -28,6 +28,31 @@ h1,h2,h3 {
 	overflow: auto;
 }
 
+.title-block {
+	height: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* background-color: #CEA2AC; */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("images/banner.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title-block h1 {
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 80px;
+}
+
+.pdf {
+	width: min(840px,100%);
+	height: auto;
+	aspect-ratio: 4/5;
+}
+
 /********** Text Blocks Small Screens **********/
 @media screen and (max-width: 800px) {
 	.main-block {
@@ -52,32 +77,6 @@ h1,h2,h3 {
 		margin: 20px;
 		margin-bottom: 0;
 	}
-}
-
-.title-block {
-	height: 250px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	/* background-color: #CEA2AC; */
-	background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("images/banner.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.title-block h1 {
-	text-align: center;
-	color: #FFFFFF;
-	font-size: 80px;
-}
-
-.pdf {
-	width: 840px;
-	height: auto;
-	aspect-ratio: 4/5;
-	overflow: auto;
 }
 
 /********** Navigation Bar Small Screens **********/
