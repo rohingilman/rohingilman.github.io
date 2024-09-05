@@ -87,6 +87,7 @@ h1,h2,h3 {
 
 .navbar .active {
 	background-color: #CEA2AC;
+	font-weight: bold;
 	color: #11151C;
 }
 
@@ -95,7 +96,7 @@ h1,h2,h3 {
 	color: #FFFFFF;
 }
 
-/********** Small screens **********/
+/********** Navigation bar small screens **********/
 .navbar .menu-icon {
 	display: none;
 }
