@@ -59,14 +59,15 @@ h1,h2,h3 {
 	top: 0;
 
 	display: flex;
-	justify-content:space-between;
-	align-items:center;
+	align-items: stretch;
+	justify-content: space-between;
 
 	background-color: #212D40;
 }
 
 .navbar a {
-	display: block;
+	display: flex;
+	align-items: center;
 	padding: 18px 30px;
 
 	text-decoration: none;
@@ -77,14 +78,7 @@ h1,h2,h3 {
 
 .navbar-right {
 	display: flex;
-}
-
-.navbar-right a {
-	padding-top: 32768px;
-	margin-top: -32768px; 
-	padding-bottom: 32768px;
-	margin-bottom: -32768px;
-	height: 100%;
+	align-items: stretch;
 }
 
 .navbar .name {
@@ -93,7 +87,6 @@ h1,h2,h3 {
 
 .navbar .active {
 	background-color: #CEA2AC;
-	font-weight: bold;
 	color: #11151C;
 }
 
@@ -102,6 +95,54 @@ h1,h2,h3 {
 	color: #FFFFFF;
 }
 
+/********** Small screens **********/
+.navbar .menu-icon {
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+	.navbar {
+		position: relative;
+	}
+	.navbar a:not(.name) {
+		display: none;}
+	.navbar a.menu-icon {
+		display: flex;
+	}
+
+	.navbar.responsive .navbar-right {
+		display: inline;
+		width: 100%;
+	}
+
+	.navbar.responsive .name {
+		display: none
+	}
+
+	.navbar.responsive a:not(.name,.menu-icon) {
+		width: 100%;
+		display: flex;
+		text-align: left;
+	}
+
+	.navbar.responsive .menu-icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		color: #11151C;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.navbar .name {
+		display: none;
+	}
+
+	.navbar {
+		justify-content: end;
+	}
+}
 
 /********** Anti-Spam **********/
 b.block-bots 
