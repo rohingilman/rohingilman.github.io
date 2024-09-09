@@ -164,8 +164,7 @@ h3 {
 
 @media screen and (max-width: 800px) {
 	.navbar {
-		position: absolute;
-		top: 0;
+		position: relative;
 	}
 	.navbar a:not(.name) {
 		display: none;}
