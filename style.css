@@ -76,6 +76,10 @@ h3 {
 		margin: 20px;
 		margin-bottom: 0;
 	}
+
+	.title-block {
+		padding-top: 60px;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -164,7 +168,8 @@ h3 {
 
 @media screen and (max-width: 800px) {
 	.navbar {
-		position: relative;
+		position: absolute;
+		top: 0;
 	}
 	.navbar a:not(.name) {
 		display: none;}
